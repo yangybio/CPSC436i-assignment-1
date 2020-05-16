@@ -2,23 +2,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="entry.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="budget-icon.ico">
-    <title>Expense Manager</title></head>
+    <title>Yang-Assignment-1</title></head>
+    <style type="text/css">
+        .header__title{
+          font-size: 50px;
+          font-color: pink;
+          border: 1px solid orange;
+          background-color: pink;
+          padding: 10px 100px 10px 100px;
+          background-clip: content-box;
+          text-align: center;
+         }
+         .header__subtitle{
+          font-size: 40px;
+          font-style:italic;
+          text-shadow: 1px 1px 2px;
+          text-align: center;
+         }
+         h3{
+          font-size: 25px;
+          font-style:blank;
+          text-align: center;
+
+         }
+<!--         .button{-->
+<!--          font-size: 25px;-->
+<!--          font-family: Arial;-->
+<!--         }-->
+
+        .container {
+          height: 50px;
+          position: relative;
+          border: 3px solid green;
+        }
+
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%
+          -ms-transform: translateY(-50%, -50%);
+          transform: translateY(-50%, -50%);
+        }
+
+         .img{
+           margin-top: 130px;
+           width: 600px;
+           height: 600px;
+           text-align: center;
+         }
+         .img:hover{
+           animation-name:img;
+           animation-delay: 500ms;
+           animation-duration: 1s;
+         }
+    </style>
 
 <body>
 <div class="header">
+    <h1 class="header__title">CPSC436I Assignment-1</h1>
+    <h2 class="header__subtitle">--Yang Yang</h2>
+    <h3>Start here !</h3>
+    <input navbar="navbar" placeholder="Select a field">
+    <br>
+<!--    <div class="text-center">-->
+<!--    <button type="button" class="button">Go !</button>-->
+<!--    </div>-->
     <div class="container">
-        <h1 class="header__title">💰～Manage your expense from today～💰</h1>
-        <h2 class="header__subtitle">--Chaoyu Xiang</h2>
+        <div class="center">
+            <button>Centered Button</button>
+        </div>
+    </div>
+    <br>
+    <img id="picture" src="https://www.thehappycatsite.com/wp-content/uploads/2017/12/grow.jpg" alt="Test_Kitten"
+         width="300px">
+
+    <div class="container my-4">
+
+        <p class="font-weight-bold">You can align the button to the center by simply adding alignment class to the parent div. See the examples.</p>
+
+        <p><strong>Detailed documentation and more examples you can find in our <a href="https://mdbootstrap.com/docs/jquery/utilities/horizontal-align/"
+                                                                                   target="_blank">Bootstrap Horizontal alignment Docs</a> </p>
+
+        <hr>
+
+        <p class="font-weight-bold">Basic example</p>
+
+        <p>Add class <code>.text-center</code> to the parent div to align <strong>any item</strong> inside to the center.</p>
+
+        <div class="border border-light p-3 mb-4">
+
+            <div class="text-center">
+                <button type="button" class="btn btn-primary">Centered button</button>
+            </div>
+
+        </div>
+
     </div>
 </div>
-<div class="main">
-    <h3>Enter your user ID number</h3>
-    <input id="user-id" placeholder="id here">
-    <br>
-    <button id="submit-user" class="button">Start here !</button>
-</div>
-<img src="bottom.png" class="img">
-<script src="redirect.js"></script>
 
+<script src="redirect.js"></script>
 
 </body></html>
