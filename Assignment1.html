@@ -23,12 +23,9 @@
           font-size: 25px;
           font-style:blank;
           text-align: center;
+          text-shadow: 5px 5px 5px #FF0000;
 
          }
-<!--         .button{-->
-<!--          font-size: 25px;-->
-<!--          font-family: Arial;-->
-<!--         }-->
 
         .container {
           height: 50px;
@@ -45,62 +42,120 @@
           transform: translateY(-50%, -50%);
         }
 
-         .img{
-           margin-top: 130px;
-           width: 600px;
-           height: 600px;
-           text-align: center;
+         img {
+           margin-top: 30px;
+           width: 300px;
+           height: 180px;
+           display:table-cell;
+           vertical-align:middle;
+           text-align:center;
+           border-radius: 50%;
+<!--           max-width:100%；-->
+<!--           max-height:100%；-->
+
          }
-         .img:hover{
+
+         img:hover {
            animation-name:img;
            animation-delay: 500ms;
-           animation-duration: 1s;
+           animation-duration: 10s;
+           box-shadow: 0 0 20px 10px rgba(0, 140, 186, 0.5);
          }
+
+         a {
+           font-size: 20px;
+           color:#833;
+           text-decoration: none;
+
+            // 设置链接字体的颜色
+           // 去掉链接下划线
+         }
+         .nav {
+           width: 100px;
+           margin: 0 auto;
+
+             /* 设置导航的整体宽度 */
+          }
+
+          .nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            // 设置ul的间距为0
+            // 去掉li自带的样式
+          }
+
+          .nav ul li {
+            float: left;
+
+            // 使li中所有的内容横向排版
+          }
+
+          .nav ul li a {
+              display: block;
+              width: 120px;
+              height: 36px;
+              line-height: 36px;
+              text-align: center;
+
+              // 把a标签设置转成块级元素
+              // 设置a的宽度
+               // 设置a标签的高度
+               // 设置a标签的行高，使文字上下居中对齐
+              // 设置文字左右居中对齐
+          }
+
+          .nav ul li a:hover {
+            background-color: gray;
+            color: pink;
+            // 设置鼠标经过的背景颜色
+          }
+
+          .nav ul li ul{
+            display: none;
+            // 隐藏ul下的所有内容
+          }
+
+          .nav ul li ul li{
+            float: none;
+          }
+
+          .nav ul li:hover ul{
+            display: block;
+            // 鼠标经过li一级菜单时，显示下方隐藏的菜单内容
+          }
+
     </style>
+</head>
 
 <body>
 <div class="header">
     <h1 class="header__title">CPSC436I Assignment-1</h1>
     <h2 class="header__subtitle">--Yang Yang</h2>
     <h3>Start here !</h3>
-    <input navbar="navbar" placeholder="Select a field">
-    <br>
-<!--    <div class="text-center">-->
-<!--    <button type="button" class="button">Go !</button>-->
-<!--    </div>-->
-    <div class="container">
-        <div class="center">
-            <button>Centered Button</button>
-        </div>
+    <div class="nav">
+        <ul>
+            <li><a href="HomePage.html">Home Page</a> </li>
+            <li><a href="#">About Page</a>
+            <ul>
+                <li><a href="#">Myself</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+            </li>
+        </ul>
     </div>
     <br>
-    <img id="picture" src="https://www.thehappycatsite.com/wp-content/uploads/2017/12/grow.jpg" alt="Test_Kitten"
-         width="300px">
-
-    <div class="container my-4">
-
-        <p class="font-weight-bold">You can align the button to the center by simply adding alignment class to the parent div. See the examples.</p>
-
-        <p><strong>Detailed documentation and more examples you can find in our <a href="https://mdbootstrap.com/docs/jquery/utilities/horizontal-align/"
-                                                                                   target="_blank">Bootstrap Horizontal alignment Docs</a> </p>
-
-        <hr>
-
-        <p class="font-weight-bold">Basic example</p>
-
-        <p>Add class <code>.text-center</code> to the parent div to align <strong>any item</strong> inside to the center.</p>
-
-        <div class="border border-light p-3 mb-4">
-
-            <div class="text-center">
-                <button type="button" class="btn btn-primary">Centered button</button>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="https://www.thehappycatsite.com/wp-content/uploads/2017/12/grow.jpg" alt="Test_Kitten"
+                              width="300px">
 <script src="redirect.js"></script>
 
 </body></html>
