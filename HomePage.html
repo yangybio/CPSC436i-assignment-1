@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <title>Message List</title>
     <style>
+    body {
+    background:rgb(254, 216, 82);
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    }
+
+    .splitLeft {
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+  }
+
+  .splitRight {
+    right: 0;
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    right: 0;
+  }
+    input:focus{
+      color:green;
+    }
     .button {
       display: inline-block;
       padding: 12px 20px;
@@ -29,7 +53,20 @@
     </style>
 </head>
 <body>
+<div class="splitLeft">
+    <input class="messageList" type="text" placeholder="add input here" size="20">
+
+</div>
+<div class="splitRight">
+    <h1 class="list-title">Here is the message</h1>
+    <div class="list-item">
+        <label></label>
+    </div>
+
+</div>
+<br>
 <button class="button" style="vertical-align:middle"><span>Add </span></button>
 <button class="button" style="vertical-align:middle"><span>Delete </span></button>
+<script src="MessageList.js"></script>
 </body>
 </html>
